@@ -53,7 +53,7 @@ export default function Intro() {
         initial={{opacity: 0, y: 100}}
         animate={{opacity: 1, y: 0}}
         className='mt-4 mb-10 px-4 text-2xl font-medium sm:text-4xl !leading-[1.5] dark:text-[#d3d0d0fb]'>
-            Hello, I'm <span className='font-bold'>Franco Ou</span>, a recent IT graduate student at the <span className='font-bold'>University of Melbourne</span>  with a strong background in software development. 
+            Hello, I&apos;m <span className='font-bold'>Franco Ou</span>, a recent IT graduate student at the <span className='font-bold'>University of Melbourne</span>  with a strong background in software development. 
             I specialise in full-stack development using <span className='font-bold underline'>MERN</span> stack (MongoDB, Express.JS, React.JS, Node.JS).
         </motion.p>
 
