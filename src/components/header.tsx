@@ -63,8 +63,8 @@ export default function Header() {
                 }
               </ul>
             </nav>
-            <Button className='fixed right-10 top-[1.7rem]' onClick={()=>router.push('/blogs')}>Blogs</Button>
-
+{/*             <Button className='fixed right-10 top-[1.7rem]' onClick={()=>router.push('/blogs')}>Blogs</Button>
+ */}
         </motion.header>
   )
 }
