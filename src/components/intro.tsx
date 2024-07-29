@@ -78,6 +78,7 @@ export default function Intro() {
 
             <Button asChild variant='secondary' className='group border rounded-full gap-2 px-8 w-[12rem] '>
                     <Link href='https://franco-s-resume.netlify.app/' target="_blank" rel="noopener noreferrer">
+
                         DOWNLOAD CV <HiDownload className='group-hover:translate-y-1 transition scale-[5]'/>
                     </Link>
             </Button>

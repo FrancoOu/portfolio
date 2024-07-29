@@ -6,6 +6,8 @@ import { ThemeProvider } from '@/provider/theme-provider';
 import { ModeToggle } from '@/components/theme-mode-toggle';
 import  ActiveSectionContextProvider from '../../context/active-section-context';
 import { Toaster } from '@/components/ui/toaster';
+import { usePathname } from 'next/navigation';
+import BackToTopButton from '@/components/back-to-top-button';
 
 const montserrat = Montserrat({ subsets: ['latin'] })
 
@@ -19,9 +21,11 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
+
+  
   return (
     <html lang="en" className='!scroll-smooth'>
-      <body className={ `${montserrat.className} bg-[#6b8ed329] text-gray-950  pt-28 sm:pt-36`}>
+      <body className={ `${montserrat.className} bg-[#6b8ed329] text-gray-950 `}>
       <ThemeProvider
             attribute="class"
             defaultTheme="system"
@@ -33,13 +37,14 @@ export default function RootLayout({
         <ActiveSectionContextProvider>
           <Header/>
           {children}
+          <BackToTopButton/>
         </ActiveSectionContextProvider>
 
         {/* <div className='fixed bottom-2 left-2'>
           <ModeToggle/>
         </div> */}
         <Toaster />
-
+   
         </ThemeProvider>
         
         </body>
