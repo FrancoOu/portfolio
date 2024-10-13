@@ -6,7 +6,7 @@ import { ThemeProvider } from '@/provider/theme-provider';
 import { ModeToggle } from '@/components/theme-mode-toggle';
 import  ActiveSectionContextProvider from '../../context/active-section-context';
 import { Toaster } from '@/components/ui/toaster';
-import { usePathname } from 'next/navigation';
+import { Analytics } from "@vercel/analytics/react"
 import BackToTopButton from '@/components/back-to-top-button';
 
 const montserrat = Montserrat({ subsets: ['latin'] })
@@ -47,6 +47,7 @@ export default function RootLayout({
    
 {/*         </ThemeProvider>
          */}
+         <Analytics/>
         </body>
     </html>
   )
