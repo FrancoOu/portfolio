@@ -49,13 +49,12 @@ export default function Intro() {
                 </motion.div>
             </div>
         </div>
-        <motion.p 
+        <motion.div 
         initial={{opacity: 0, y: 100}}
         animate={{opacity: 1, y: 0}}
-        className='mt-4 mb-10 px-4 text-2xl font-medium sm:text-4xl !leading-[1.5] dark:text-[#d3d0d0fb]'>
-            Hello, I&apos;m <span className='font-bold'>Franco Ou</span>, a recent IT graduate student at the <span className='font-bold'>University of Melbourne</span>  with a strong background in software development. 
-            I specialise in full-stack development using <span className='font-bold underline'>MERN</span> stack (MongoDB, Express.JS, React.JS, Node.JS).
-        </motion.p>
+        className='mx-0 my-auto px-4 text-2xl font-medium sm:text-[100px] !leading-[1.5] dark:text-[#d3d0d0fb] overflow-hidden animate-typing border-r-2 border-solid border-orange-300 whitespace-nowrap  '  >
+            FRANCO OU
+        </motion.div>
 
         <motion.div 
             className='flex sm:flex-row flex-col items-center justify-center gap-4'
